@@ -1,20 +1,22 @@
 const App = () => (
-    <div className="relative h-screen bg-cover bg-center bg-no-repeat overflow-hidden" style={{ backgroundImage: "url('src/assets/icter_banner.jpg')" }}>
-        {/* Overlay for opacity */}
-        <div className="absolute inset-0 bg-black opacity-30"></div>
-
+    <div className="relative h-screen bg-white overflow-hidden">
         {/* Container for content */}
         <div className="relative z-10 flex h-full items-center px-8">
             {/* Text Section */}
             <div className="flex-grow flex items-center justify-start pr-8">
-                <div className="text-white text-lg max-w-xs">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum labore libero sint expedita consequuntur aliquam magni, officia saepe quo ipsam laudantium mollitia voluptatem pariatur voluptatum numquam modi provident repellendus accusantium.
+                <div className="text-black max-w-md ml-16">
+                    <h1 className="text-6xl font-bold mb-6 leading-tight">
+                        Save your time with <span className="text-indigo-500">order online</span> and pickup
+                    </h1>
+                    <p className="text-xl">
+                        Get your favorite items faster and hassle-free with our efficient online ordering system.
+                    </p>
                 </div>
             </div>
 
             {/* Image Section */}
-            <div className="flex-shrink-0 w-1/2 flex items-center justify-end">
-                <img src="src/assets/images/signin.png" alt="ICter Logo" className="h-3/4 w-auto" />
+            <div className="flex-shrink-0 w-1/3 flex items-center justify-end">
+                <img src="src/assets/images/signin.png" alt="Logo" className="h-1/3 w-auto" />
             </div>
         </div>
     </div>
